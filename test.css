@@ -1,0 +1,1239 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+  text-align: center;
+  border: none;
+  transition: all 0.4s ease;
+}
+
+.container,
+.container_s {
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: #04070e;
+}
+
+.nav_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px 0;
+}
+
+.nav_menu {
+  display: flex;
+  align-items: center;
+  gap: 48px;
+}
+
+.nav_menu p {
+  color: rgb(255, 255, 255);
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0%;
+  text-align: left;
+  cursor: pointer;
+}
+.nav_menu p:hover {
+  text-decoration: underline;
+}
+
+header {
+  padding: 104px 0 170px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+header h1 {
+  color: rgb(255, 255, 255);
+  font-family: Poppins;
+  font-size: 48px;
+  font-weight: 300;
+  line-height: 72px;
+  letter-spacing: 0%;
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.header_timer {
+  border-radius: 1000px;
+
+  backdrop-filter: blur(20px);
+  background: rgba(160, 182, 255, 0.05);
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 48px 0;
+  margin-bottom: 88px;
+}
+
+.timer_value {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.timer_value p {
+  color: rgb(160, 182, 255);
+  font-family: Poppins;
+  font-size: 64px;
+  font-weight: 600;
+  line-height: 96px;
+  letter-spacing: 0%;
+  text-align: center;
+}
+
+.timer_value span {
+  color: rgb(255, 255, 255);
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 21px;
+  letter-spacing: 0%;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.main_btn {
+  border-radius: 100px;
+  padding: 24px 48px 24px 48px;
+  background: linear-gradient(
+    270deg,
+    rgb(164, 185, 255),
+    rgb(68, 112, 254) 100%
+  );
+  color: rgb(255, 255, 255);
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 27px;
+  letter-spacing: 0%;
+  text-align: center;
+  transition: all 0.4s ease;
+}
+.main_btn:hover {
+  background: linear-gradient(
+    270deg,
+    rgb(145, 170, 255),
+    rgb(30, 76, 226) 100%
+  );
+  transition: all 0.4s ease;
+}
+.token_dest {
+  padding-top: 96px;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.token_left {
+  border-radius: 32px;
+  padding: 40px;
+  background: rgba(160, 182, 255, 0.05);
+  width: 40%;
+}
+
+.token_left h4 {
+  color: rgb(255, 255, 255);
+  font-family: Poppins;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+  letter-spacing: 0%;
+  text-align: left;
+  margin-bottom: 24px;
+}
+
+.diagram_desc {
+  margin-bottom: 24px;
+}
+
+.diagram_desc div {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.diagram_desc p {
+  color: rgb(255, 255, 255);
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 21px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.diagram_desc span {
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 21px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.token_right {
+  border-radius: 32px;
+  padding: 40px 56px 40px 56px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 48px;
+  background: rgba(160, 182, 255, 0.05);
+  width: 60%;
+}
+
+.token_logo img {
+  width: 152.7px;
+  height: 152.7px;
+}
+
+.token_right_desc {
+  border-radius: 24px;
+  padding: 48px;
+
+  background: rgba(160, 182, 255, 0.05);
+}
+
+.token_right_desc div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 31px;
+  margin-bottom: 32px;
+  border-bottom: 1px solid rgba(160, 182, 255, 0.05);
+}
+.token_right_desc p {
+  opacity: 0.7;
+
+  color: rgb(255, 255, 255);
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 21px;
+  letter-spacing: 0%;
+  text-align: center;
+}
+
+.token_right_desc h5 {
+  color: rgb(255, 255, 255);
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 21px;
+  letter-spacing: 0%;
+  text-align: center;
+}
+
+.roadmap_wrapper {
+  margin-top: 118px;
+}
+.roadmap_cards {
+  width: 100%;
+}
+
+.roadmap_wrapper h2 {
+  color: rgb(255, 255, 255);
+  font-family: Poppins;
+  font-size: 48px;
+  font-weight: 300;
+  line-height: 72px;
+  letter-spacing: 0%;
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+/* .roadmap_cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+} */
+
+.roadmap_card_title p {
+  color: rgb(68, 112, 254);
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 21px;
+  letter-spacing: 0%;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.roadmap_card_title div {
+  background: linear-gradient(
+    90deg,
+    rgb(68, 112, 254),
+    rgba(159, 182, 255, 0) 100%
+  );
+  width: 100%;
+  height: 2px;
+  margin: 16px 0;
+}
+
+.roadmap_card_desc {
+  border-radius: 16px;
+  padding: 32px;
+  background: rgba(160, 182, 255, 0.05);
+}
+
+.roadmap_card_desc h4 {
+  color: rgb(255, 255, 255);
+  font-family: Poppins;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+  letter-spacing: 0%;
+  text-align: left;
+  margin-bottom: 24px;
+}
+
+.roadmap_card_desc_item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.roadmap_card_desc_item p {
+  color: rgb(255, 255, 255);
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 21px;
+  letter-spacing: 0%;
+  text-align: left;
+  margin-bottom: 4px;
+}
+
+.roadmap_card_desc_item span {
+  color: rgb(255, 255, 255);
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 21px;
+  letter-spacing: 0%;
+  text-align: left;
+  opacity: 0.7;
+}
+
+.roadmap_card_desc .roadmap_card_desc_item:last-child {
+  margin-bottom: 0;
+}
+
+.roadmap_card_desc {
+  height: 90%;
+}
+
+.advantages_title h2 {
+  color: rgb(255, 255, 255);
+  font-family: Poppins;
+  font-size: 48px;
+  font-weight: 300;
+  line-height: 72px;
+  letter-spacing: 0%;
+  text-align: left;
+  margin-bottom: 48px;
+}
+
+.advantages_title p {
+  color: rgb(255, 255, 255);
+  font-family: Poppins;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 30px;
+  letter-spacing: 0%;
+  text-align: left;
+  max-width: 531px;
+}
+
+.advantages {
+  padding: 120px 0 96px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.advantage_cards {
+  display: flex;
+  align-items: start;
+  gap: 32px;
+  width: 100%;
+  max-width: 640px;
+}
+.advantage_cards_col {
+  width: 50%;
+}
+
+.advantage_card {
+  width: 100%;
+  position: relative;
+  border-radius: 16px;
+  padding: 1px;
+  height: 188px;
+  background: linear-gradient(
+    rgba(159, 182, 255, 0.5),
+    rgba(160, 182, 255, 0.03)
+  );
+}
+
+.advantage_card_wrapper {
+  padding: 23px;
+  background: #04070e;
+  border-radius: 16px 16px 0 0;
+  height: 105%;
+}
+.advantage_card_wrapper p {
+  color: rgb(255, 255, 255);
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 21px;
+  letter-spacing: 0%;
+  text-align: left;
+  margin: 16px 0 8px;
+}
+
+.advantage_card_wrapper span {
+  color: rgb(255, 255, 255);
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 21px;
+  letter-spacing: 0%;
+  text-align: left;
+  opacity: 0.7;
+}
+.advantage_card_wrapper ul {
+  padding-left: 20px;
+}
+.advantage_card_wrapper li {
+  color: rgb(255, 255, 255);
+  opacity: 0.7;
+}
+
+.advantage_card {
+  margin-bottom: 32px;
+}
+
+.advantage_cards .advantage_cards_col:nth-child(2) {
+  padding-top: 32px;
+}
+
+.whitepaper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 167px 0 144px;
+  margin-bottom: 96px;
+}
+
+.whitepaper h2 {
+  color: rgb(255, 255, 255);
+  font-family: Poppins;
+  font-size: 48px;
+  font-weight: 300;
+  line-height: 72px;
+  letter-spacing: 0%;
+  text-align: center;
+  margin-bottom: 48px;
+}
+.whitepaper p {
+  color: rgb(255, 255, 255);
+  font-family: Poppins;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 30px;
+  letter-spacing: 0%;
+  text-align: center;
+  margin-bottom: 64px;
+}
+
+.footer_top {
+  background: rgba(160, 182, 255, 0.05);
+  padding: 24px 0;
+}
+
+.footer_top_w {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer_socials {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.footer_socials img {
+  width: 24px;
+}
+
+.footer_socials a {
+  border-radius: 8px;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.05);
+  transition: all 0.4s ease;
+}
+.footer_socials a:hover {
+  background: rgba(255, 255, 255, 0.195);
+  transition: all 0.4s ease;
+}
+
+.btm_footer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  padding: 40px 0;
+}
+
+.footer_menu h4 {
+  color: rgb(255, 255, 255);
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 21px;
+  letter-spacing: 0%;
+  text-align: left;
+  opacity: 0.7;
+  margin-bottom: 40px;
+}
+
+.footer_menu p {
+  color: rgb(255, 255, 255);
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 21px;
+  letter-spacing: 0%;
+  text-align: left;
+  margin-bottom: 24px;
+}
+
+.footer_menu a p:hover {
+  text-decoration: underline;
+}
+.footer_menu a {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.footer_emails a p {
+  margin: 0;
+}
+.footer_emails a {
+  margin-bottom: 24px;
+}
+
+.discord {
+  box-sizing: border-box;
+  border-radius: 24px;
+
+  background: rgba(160, 182, 255, 0.05);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: 32px;
+  border: 1px solid #233670;
+}
+
+.discord h3 {
+  color: rgb(255, 255, 255);
+  font-family: Poppins;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+  letter-spacing: 0%;
+  text-align: center;
+}
+.main_btn {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.copyright {
+  padding: 40px 0;
+}
+
+.copyright p {
+  color: rgb(255, 255, 255);
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 21px;
+  letter-spacing: 0%;
+  text-align: center;
+  opacity: 0.7;
+}
+
+.diagram {
+  user-select: none;
+
+  user-drag: none;
+  -webkit-user-drag: none;
+}
+
+header {
+  position: relative;
+}
+.header_overlay {
+  position: absolute;
+}
+
+.main_wrapper {
+  width: 100%;
+  overflow: hidden;
+}
+
+header button,
+header h1,
+nav {
+  position: relative;
+  /* z-index: 1; */
+}
+
+.header_wrapper {
+  width: 100%;
+  background: url(../assets/images/header-bg.svg);
+  background-position: center;
+  background-size: cover;
+}
+
+.whitepaper {
+  width: 100%;
+  background: url(../assets/images/whitepaper-bg.svg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.advantages_wrapper,
+.advantages_title {
+  position: relative;
+}
+
+.adv_overlay {
+  left: 0;
+  top: 0;
+  width: auto;
+  left: -50%;
+  top: -90%;
+}
+
+.page_content {
+  padding: 80px 0;
+}
+
+.page_content h2 {
+  color: rgb(255, 255, 255);
+  font-family: Poppins;
+  font-size: 48px;
+  font-weight: 300;
+  line-height: 72px;
+  letter-spacing: 0%;
+  margin-bottom: 30px;
+  text-align: center;
+}
+.page_content_title {
+  margin-bottom: 48px;
+}
+
+.page_content_title h3 {
+  color: rgb(255, 255, 255);
+  font-family: Poppins;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 140%;
+  letter-spacing: 0%;
+  text-align: center;
+}
+
+.page_text p,
+.contacts_card p {
+  color: rgb(255, 255, 255);
+  font-family: Poppins;
+  font-size: 19px;
+  font-weight: 300;
+  line-height: 150%;
+  letter-spacing: 0%;
+  text-align: left;
+  margin-bottom: 4px;
+  margin-bottom: 24px;
+}
+.page_text h3 {
+  color: rgb(255, 255, 255);
+  font-family: Poppins;
+  font-size: 28px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.page_text p span,
+.contacts_card p span {
+  font-weight: 600;
+}
+
+.ecosystem_cards {
+  max-width: 100%;
+  margin-bottom: 50px;
+}
+.ecosystem_cards .advantage_card {
+  height: auto;
+}
+.ecosystem_cards p {
+  margin-top: 0;
+}
+
+.s_block_title h4 {
+  color: rgb(255, 255, 255);
+  font-family: Poppins;
+  font-size: 40px;
+  font-weight: 300;
+  line-height: 72px;
+  letter-spacing: 0%;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.contacts_card {
+  margin-bottom: 40px;
+  margin-top: 40px;
+  border-radius: 15px;
+  padding: 20px;
+  background: rgb(32, 34, 38);
+}
+
+.contacts_card_top {
+  margin-bottom: 20px;
+}
+.contacts_card_top div,
+.contacts_card_btm div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+
+.contacts_card p {
+  margin: 0;
+}
+
+.page_text ul li {
+  color: #fff;
+  margin-bottom: 15px;
+}
+.page_text ul {
+  padding-left: 20px;
+  margin-bottom: 30px;
+}
+.page_text ul li p {
+  margin: 0;
+}
+
+.whitepaper_desc {
+  max-width: 830px;
+}
+
+.page_content {
+  background: url(../assets/images/header-bg.svg);
+  background-position: center;
+}
+.privacy_page {
+  background: none;
+}
+
+.inv_cards .advantage_cards_col:nth-child(2) {
+  padding: 0;
+}
+.inv_cards {
+  align-items: center;
+}
+
+.discord .main_btn {
+  color: rgb(4, 7, 14);
+}
+
+.mob_menu_btn {
+  width: 24px;
+  height: 24px;
+  display: none;
+}
+
+.mob_menu {
+  background: rgb(6, 9, 18);
+  height: 100vh;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 65%;
+  z-index: 111;
+  transition: all 0.4s ease;
+  transform: translateX(100%);
+}
+.visible_mob_menu {
+  transition: all 0.4s ease;
+  transform: translateX(0);
+}
+.mob_menu_exit {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 10px;
+  padding-top: 35px;
+  margin-bottom: 36px;
+}
+.mob_menu .nav_menu {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 32px;
+  padding-left: 24px;
+}
+nav {
+  position: relative;
+  z-index: 1;
+}
+
+.text_table {
+  max-width: 100%;
+  width: 100%;
+  /* padding: 20px; */
+  border-radius: 20px;
+  border-collapse: collapse;
+
+  background: rgba(160, 182, 255, 0.05);
+}
+
+.text_table td {
+  color: rgb(255, 255, 255);
+  font-family: Poppins;
+  font-size: 19px;
+  font-weight: 300;
+  line-height: 21px;
+  padding: 15px;
+  border: 1px solid rgba(133, 131, 131, 0.512);
+}
+.text_table thead td {
+  opacity: 0.7;
+  font-weight: 500;
+}
+.page_text {
+  margin-bottom: 40px;
+}
+.page_text ul {
+  padding-left: 20px;
+}
+.tac {
+  text-align: center;
+}
+
+.roadmap_title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.swiper-button-next,
+.swiper-button-prev {
+  position: static !important;
+}
+
+@media only screen and (max-width: 1300px) {
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .token_dest {
+    flex-direction: column;
+  }
+  .token_left,
+  .token_right {
+    width: 100%;
+  }
+  .roadmap_cards {
+    width: 100%;
+  }
+
+  .adv_overlay {
+    width: 70%;
+    left: 0;
+    top: 0;
+  }
+  .advantages {
+    flex-direction: column;
+  }
+  .advantages_title h2,
+  .advantages_title p {
+    text-align: center;
+  }
+  .btm_footer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .discord {
+    height: 200px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: none !important;
+  }
+  .text_table_w {
+    overflow: auto;
+    width: 100%;
+  }
+  .text_table td {
+    padding: 10px;
+    font-size: 13px;
+  }
+  .about_table {
+    width: 600px;
+  }
+  .roadmap_card {
+    width: 100%;
+  }
+  .mob_menu_btn {
+    display: flex;
+  }
+  .nav_menu p {
+    color: rgb(255, 255, 255);
+    font-family: Poppins;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0%;
+    text-align: left;
+  }
+  .nav_wrapper .nav_menu {
+    display: none;
+  }
+
+  .container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .nav_icon {
+    width: 50px;
+  }
+  .header_overlay {
+    width: 300%;
+  }
+  header h1 {
+    color: rgb(255, 255, 255);
+    font-family: Poppins;
+    font-size: 32px;
+    font-weight: 300;
+    line-height: 48px;
+    letter-spacing: 0%;
+    text-align: center;
+    padding: 0 5px;
+    margin-bottom: 32px;
+  }
+
+  .header_timer {
+    padding: 24px;
+    border-radius: 1000px;
+  }
+  .timer_value p {
+    color: rgb(160, 182, 255);
+    font-family: Poppins;
+    font-size: 38px;
+    font-weight: 600;
+    line-height: 57px;
+    letter-spacing: 0%;
+    text-align: center;
+  }
+  .timer_value span {
+    color: rgb(255, 255, 255);
+    font-family: Poppins;
+    font-size: 10px;
+    font-weight: 300;
+    line-height: 15px;
+    letter-spacing: 0%;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .timer_value {
+    gap: 0;
+  }
+
+  .main_btn {
+    border-radius: 100px;
+    padding: 24px 32px 24px 32px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 21px;
+  }
+  .header_timer {
+    margin-bottom: 72px;
+  }
+  header {
+    padding-bottom: 137px;
+  }
+  .token_dest {
+    padding-top: 40px;
+  }
+
+  header {
+    background: url(../assets/images/header-bg-mob.svg);
+    background-position: center;
+  }
+  .main_btn {
+    padding-top: 0;
+    padding-bottom: 0;
+    height: 56px;
+  }
+  .token_left,
+  .token_right {
+    padding: 24px;
+    border-radius: 24px;
+  }
+  .token_logo img {
+    width: 100px;
+    height: 100px;
+  }
+  .token_right {
+    gap: 16px;
+  }
+  .token_right_desc {
+    padding: 24px;
+  }
+  .token_right_desc div {
+    flex-direction: column;
+    padding-bottom: 24px;
+    margin-bottom: 24px;
+    gap: 8px;
+  }
+  .token_right_desc h5 {
+    text-align: center;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 18px;
+  }
+  .token_right_desc p {
+    color: rgb(255, 255, 255);
+    font-family: Poppins;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 18px;
+    letter-spacing: 0%;
+    text-align: center;
+  }
+  .token_right .main_btn {
+    margin-top: 8px;
+  }
+  h2,
+  .roadmap_wrapper h2 {
+    color: rgb(255, 255, 255);
+    font-family: Poppins;
+    font-size: 32px;
+    font-weight: 300;
+    line-height: 48px;
+    letter-spacing: 0%;
+    text-align: left;
+    margin-bottom: 32px;
+  }
+  .roadmap_card_desc {
+    padding: 24px;
+  }
+  .roadmap_card_desc h4 {
+    font-size: 16px;
+    margin-bottom: 16px;
+  }
+  .advantages {
+    padding-top: 96px;
+  }
+  .advantages_title h2,
+  .whitepaper h2 {
+    color: rgb(255, 255, 255);
+    font-family: Poppins;
+    font-size: 32px;
+    font-weight: 300;
+    line-height: 48px;
+    letter-spacing: 0%;
+    text-align: center;
+    margin-bottom: 24px;
+  }
+  .advantages_title p,
+  .whitepaper p {
+    color: rgb(255, 255, 255);
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-align: center;
+  }
+  .advantage_cards {
+    flex-direction: column;
+    gap: 0;
+  }
+  .advantage_cards_col {
+    width: 100%;
+    padding-top: 0 !important;
+  }
+  .advantage_card {
+    margin-bottom: 16px;
+  }
+  .adv_overlay {
+    width: 100%;
+    transform: scale(2.5);
+    left: 0;
+    top: 0;
+  }
+  .whitepaper {
+    padding-top: 112px;
+    padding-bottom: 111px;
+    margin-bottom: 42px;
+  }
+  br {
+    display: none;
+  }
+
+  .whitepaper {
+    width: 100%;
+    background: url(../assets/images/whitepaper-bg-mob.svg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+  }
+
+  .footer_logo {
+    width: 58px;
+  }
+  .footer_socials a {
+    border-radius: 5.33px;
+    width: 32px;
+    height: 32px;
+    background: rgba(255, 255, 255, 0.05);
+  }
+  .footer_socials img {
+    width: 16px;
+    height: 16px;
+  }
+  .footer_socials {
+    gap: 8px;
+  }
+  .btm_footer {
+    display: flex;
+    flex-direction: column;
+    padding: 32px 10px;
+  }
+  .footer_menu h4 {
+    font-size: 12px;
+    margin-bottom: 24px;
+  }
+  .footer_menu p {
+    margin-bottom: 16px;
+    font-size: 12px;
+  }
+  .footer_emails a {
+    margin-bottom: 18px;
+  }
+  .discord {
+    height: auto;
+    padding: 24px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+  }
+  .discord h3 {
+    color: rgb(255, 255, 255);
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-align: left;
+  }
+  .copyright {
+    padding: 16px 0;
+  }
+  .copyright p {
+    font-size: 12px;
+  }
+
+  .page_content {
+    padding: 50px 0;
+  }
+  .page_content h2 {
+    color: rgb(255, 255, 255);
+    font-family: Poppins;
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 40px;
+    letter-spacing: 0%;
+    text-align: center;
+    margin-bottom: 24px;
+  }
+  .page_content_title h3 {
+    color: rgb(255, 255, 255);
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-align: center;
+  }
+  .page_content_title {
+    margin-bottom: 30px;
+  }
+  .ecosystem_cards {
+    margin-bottom: 24px;
+  }
+  .page_text p,
+  .contacts_card p {
+    font-size: 16px;
+  }
+
+  .privacy_page {
+    background: none;
+  }
+  .roadmap_card {
+    width: 100%;
+  }
+}
