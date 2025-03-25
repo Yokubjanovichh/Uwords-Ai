@@ -17,6 +17,7 @@ body {
 .mainWrapper {
   width: 100%;
   max-width: 1440px;
+  /* height: 600vh; */
   margin: 0 auto;
   overflow: hidden;
   background: rgba(26, 26, 26, 1);
@@ -361,6 +362,20 @@ body {
 .downloadFromBodyText > div {
   width: 100%;
   margin-top: clamp(20px, calc(80 / 14.4 * 1vw), 80px);
+}
+
+.downloadFromBodyText > div > p {
+  width: 100%;
+  max-width: 587px;
+  font-family: "Avenir Next Cyr";
+  font-weight: 700;
+  font-size: clamp(10px, calc(28 / 14.4 * 1vw), 28px);
+  line-height: 140%;
+  letter-spacing: 1px;
+  vertical-align: middle;
+  text-transform: uppercase;
+  color: rgba(242, 236, 231, 0.6);
+  margin-left: auto;
 }
 
 .downloadFromBodyText > div > p {
