@@ -6,6 +6,10 @@
   box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+}
+
 body {
   background: rgba(65, 65, 65, 1);
 }
@@ -13,7 +17,7 @@ body {
 .mainWrapper {
   width: 100%;
   max-width: 1440px;
-  height: 200vh;
+  height: 600vh;
   margin: 0 auto;
   overflow: hidden;
   background: rgba(26, 26, 26, 1);
@@ -290,6 +294,89 @@ body {
   margin-bottom: -300px;
 }
 
+.downloadFrom {
+  width: 100%;
+  padding: 40px 0;
+  background: url(/images/aboutBg1.webp);
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: 100%;
+}
+
+.downloadFromPatfrom {
+  width: 100%;
+  max-width: clamp(300px, calc(890 / 14.4 * 1vw), 890px);
+  display: flex;
+  align-items: center;
+  gap: clamp(10px, calc(20 / 14.4 * 1vw), 20px);
+  flex-wrap: wrap;
+  padding-left: clamp(15px, calc(40 / 14.4 * 1vw), 40px);
+}
+
+.downloadFromPatfrom a img {
+  width: 100%;
+  max-width: clamp(135px, calc(270 / 14.4 * 1vw), 270px);
+  height: auto;
+}
+
+.downloadFromBody {
+  margin-top: clamp(20px, calc(80 / 14.4 * 1vw), 80px);
+  display: flex;
+  align-items: center;
+  gap: clamp(50px, calc(100 / 14.4 * 1vw), 100px);
+  padding-right: 20px;
+}
+
+.downloadFromImg {
+  width: 100%;
+  max-width: clamp(200px, calc(500 / 14.4 * 1vw), 500px);
+  aspect-ratio: 1/2;
+  background: url(/images/aboutPhone2.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 90%;
+}
+
+.downloadFromBodyText > p {
+  width: 100%;
+  max-width: 885px;
+  font-family: "Avenir Next Cyr";
+  font-weight: 700;
+  font-size: clamp(16px, calc(60 / 14.4 * 1vw), 60px);
+  line-height: 140%;
+  letter-spacing: 1px;
+  vertical-align: middle;
+  text-transform: uppercase;
+  color: rgba(253, 234, 107, 1);
+}
+
+.downloadFromBodyText > p > span:nth-child(1) {
+  color: rgba(159, 216, 229, 1);
+}
+
+.downloadFromBodyText > p > span:nth-child(2) {
+  color: #f2ece7;
+}
+
+.downloadFromBodyText > div {
+  width: 100%;
+  margin-top: clamp(20px, calc(80 / 14.4 * 1vw), 80px);
+}
+
+.downloadFromBodyText > div > p {
+  width: 100%;
+  max-width: 587px;
+  font-family: "Avenir Next Cyr";
+  font-weight: 700;
+  font-size: clamp(10px, calc(28 / 14.4 * 1vw), 28px);
+  line-height: 140%;
+  letter-spacing: 1px;
+  vertical-align: middle;
+  text-transform: uppercase;
+  color: rgba(242, 236, 231, 0.6);
+  margin-left: auto;
+}
+
 @media only screen and (max-width: 1300px) {
   .aboutPrHeaderBodyLeftStar {
     flex-direction: column;
@@ -346,6 +433,24 @@ body {
 
   .aboutPrHeaderBodyLeftUserPurpose div:nth-child(2) p:nth-child(2) {
     font-size: 10px;
+  }
+
+  .downloadFromBodyText > p {
+    width: 100%;
+    max-width: 600px;
+    font-weight: 700;
+    font-size: clamp(16px, calc(50 / 14.4 * 1vw), 50px);
+  }
+
+  .downloadFromBodyText > div {
+    margin-top: clamp(20px, calc(50 / 14.4 * 1vw), 50px);
+  }
+
+  .downloadFromBodyText > div > p {
+    width: 100%;
+    max-width: 450px;
+    font-family: "Avenir Next Cyr";
+    font-size: clamp(10px, calc(20 / 14.4 * 1vw), 20px);
   }
 }
 
@@ -496,5 +601,47 @@ body {
     font-size: calc(24 / 7 * 1vw);
     line-height: 140%;
     letter-spacing: calc(1 / 7 * 1vw);
+  }
+
+  .downloadFromPatfrom {
+    gap: 10px;
+    padding-left: clamp(10px, calc(20 / 7 * 1vw), 20px);
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .downloadFrom {
+    padding: 0 20px;
+  }
+
+  .downloadFromPatfrom a img {
+    width: 100%;
+    max-width: calc(270 / 7 * 1vw);
+    height: auto;
+  }
+
+  .downloadFrom {
+    background-position: center;
+    background-size: 120%;
+  }
+
+  .downloadFromBody {
+    flex-direction: column;
+    gap: 0;
+  }
+  .downloadFromImg {
+    max-width: calc(300 / 7 * 1vw);
+  }
+
+  .downloadFromBodyText > p {
+    max-width: 100%;
+    font-family: "Avenir Next Cyr";
+    font-size: clamp(16px, calc(30 / 7 * 1vw), 30px);
+  }
+
+  .downloadFromBodyText > div > p {
+    max-width: calc(380 / 7 * 1vw);
+    font-size: calc(16 / 7 * 1vw);
+    margin-left: auto;
   }
 }
