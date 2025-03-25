@@ -17,7 +17,6 @@ body {
 .mainWrapper {
   width: 100%;
   max-width: 1440px;
-  height: 600vh;
   margin: 0 auto;
   overflow: hidden;
   background: rgba(26, 26, 26, 1);
@@ -301,6 +300,7 @@ body {
   background-repeat: no-repeat;
   background-position: top right;
   background-size: 100%;
+  margin-bottom: clamp(20px, calc(40 / 7 * 1vw), 40px);
 }
 
 .downloadFromPatfrom {
@@ -630,18 +630,18 @@ body {
     gap: 0;
   }
   .downloadFromImg {
-    max-width: calc(300 / 7 * 1vw);
+    max-width: calc(370 / 7 * 1vw);
   }
 
   .downloadFromBodyText > p {
     max-width: 100%;
     font-family: "Avenir Next Cyr";
-    font-size: clamp(16px, calc(30 / 7 * 1vw), 30px);
+    font-size: clamp(16px, calc(40 / 7 * 1vw), 40px);
   }
 
   .downloadFromBodyText > div > p {
-    max-width: calc(380 / 7 * 1vw);
-    font-size: calc(16 / 7 * 1vw);
-    margin-left: auto;
+    max-width: 100%;
+    font-size: calc(22 / 7 * 1vw);
+    text-align: right;
   }
 }
