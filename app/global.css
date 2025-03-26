@@ -12,12 +12,13 @@ a {
 
 body {
   background: rgba(65, 65, 65, 1);
+  font-family: "Avenir Next Cyr";
 }
 
 .mainWrapper {
   width: 100%;
   max-width: 1440px;
-  /* height: 600vh; */
+  /* height: 1000vh; */
   margin: 0 auto;
   overflow: hidden;
   background: rgba(26, 26, 26, 1);
@@ -65,7 +66,6 @@ body {
 }
 
 .navMenu a {
-  font-family: "Avenir Next Cyr";
   font-weight: 700;
   font-size: 20px;
   line-height: 120%;
@@ -150,7 +150,6 @@ body {
 }
 
 .aboutPrHeaderTitle {
-  font-family: "Avenir Next Cyr";
   font-weight: 750;
   font-size: clamp(30px, calc(128 / 14.4 * 1vw), 128px);
   line-height: 110%;
@@ -188,7 +187,7 @@ body {
 
 .aboutPrHeaderBodyLeftRate > p {
   max-width: 595px;
-  font-family: "Avenir Next Cyr";
+
   font-weight: 700;
   font-size: 24px;
   line-height: 140%;
@@ -210,7 +209,6 @@ body {
 }
 
 .aboutPrHeaderBodyLeftStarsPinkText {
-  font-family: "Avenir Next Cyr";
   font-weight: 750;
   font-size: 20px;
   line-height: 100%;
@@ -255,7 +253,7 @@ body {
 .aboutPrHeaderBodyLeftUserPurpose div:nth-child(2) p:nth-child(2) {
   width: 100%;
   max-width: 140px;
-  font-family: "Avenir Next Cyr";
+
   font-weight: 700;
   font-size: 14px;
   line-height: 100%;
@@ -341,7 +339,7 @@ body {
 .downloadFromBodyText > p {
   width: 100%;
   max-width: 885px;
-  font-family: "Avenir Next Cyr";
+
   font-weight: 700;
   font-size: clamp(16px, calc(60 / 14.4 * 1vw), 60px);
   line-height: 140%;
@@ -367,7 +365,7 @@ body {
 .downloadFromBodyText > div > p {
   width: 100%;
   max-width: 587px;
-  font-family: "Avenir Next Cyr";
+
   font-weight: 700;
   font-size: clamp(10px, calc(28 / 14.4 * 1vw), 28px);
   line-height: 140%;
@@ -381,7 +379,7 @@ body {
 .downloadFromBodyText > div > p {
   width: 100%;
   max-width: 587px;
-  font-family: "Avenir Next Cyr";
+
   font-weight: 700;
   font-size: clamp(10px, calc(28 / 14.4 * 1vw), 28px);
   line-height: 140%;
@@ -407,7 +405,6 @@ body {
 }
 
 .invationInStudyWrapperTitle > p {
-  font-family: "Avenir Next Cyr";
   font-weight: 750;
   font-size: clamp(40px, calc(128 / 14.4 * 1vw), 128px);
   line-height: 110%;
@@ -428,7 +425,7 @@ body {
 .invationInStudyWrapperTitleBody p {
   width: 100%;
   max-width: 408px;
-  font-family: "Avenir Next Cyr";
+
   font-weight: 700;
   font-size: clamp(12px, calc(24 / 14.4 * 1vw), 24px);
   line-height: 140%;
@@ -502,7 +499,7 @@ body {
 .invationInStudyWrapperDescItem p {
   width: 100%;
   max-width: clamp(300px, calc(820 / 14.4 * 1vw), 820px);
-  font-family: "Avenir Next Cyr";
+
   font-weight: 700;
   font-size: clamp(20px, calc(32 / 14.4 * 1vw), 32px);
   line-height: 140%;
@@ -526,7 +523,6 @@ body {
 }
 
 .ourProgramTitle p {
-  font-family: "Avenir Next Cyr";
   font-weight: 750;
   font-size: clamp(40px, calc(128 / 14.4 * 1vw), 128px);
   line-height: 110%;
@@ -602,6 +598,123 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+.telegramChanel {
+  width: 100%;
+  margin-top: clamp(40px, calc(100 / 14.4 * 1vw), 100px);
+  padding: 0 clamp(10px, calc(40 / 14.4 * 1vw), 40px);
+}
+
+.telegramChanelTitle {
+  font-weight: 750;
+  font-size: clamp(48px, calc(128 / 14.4 * 1vw), 128px);
+  line-height: 100%;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.telegramChanelTitle > span:nth-child(1) {
+  color: rgba(143, 167, 223, 1);
+}
+
+.telegramChanelTitle > span:nth-child(2) {
+  color: #1a1a1a;
+  -webkit-text-stroke: clamp(2px, calc(3 / 14.4 * 1vw), 3px) #f2ece7;
+}
+
+.telegramChanelDesc {
+  margin: clamp(30px, calc(80 / 14.4 * 1vw), 80px) 0;
+  width: 100%;
+  max-width: clamp(190px, calc(572 / 14.4 * 1vw), 572px);
+
+  font-weight: 700;
+  font-size: clamp(12px, calc(24 / 14.4 * 1vw), 24px);
+  line-height: 140%;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: rgba(242, 236, 231, 0.6);
+}
+
+.telegramChanelBody {
+  width: 100%;
+  padding: clamp(40px, calc(60 / 14.4 * 1vw), 60px) 0 0
+    clamp(20px, calc(40 / 14.4 * 1vw), 40px);
+  position: relative;
+  border: 1px solid rgba(242, 236, 231, 0.2);
+  border-radius: clamp(20px, calc(30 / 14.4 * 1vw), 30px);
+  background: linear-gradient(0deg, #1a1a1a, #1a1a1a),
+    linear-gradient(0deg, rgba(242, 236, 231, 0.1), rgba(242, 236, 231, 0.1));
+  box-shadow: 0px 0px 5px 0px rgba(255, 255, 255, 0.25) inset;
+  background: #302f2f;
+}
+
+.telegramChanelBodyTop {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+}
+
+.telegramChanelBodyTop > img {
+  width: 100%;
+  max-width: clamp(154px, calc(300 / 14.4 * 1vw), 300px);
+  height: auto;
+  margin-top: clamp(-300px, calc(-300 / 14.4 * 1vw), -100px);
+  margin-right: clamp(-50px, calc(-50 / 14.4 * 1vw), -20px);
+}
+
+.telegramChanelBodyLeft {
+  width: 100%;
+  max-width: clamp(260px, calc(1050 / 14.4 * 1vw), 1050px);
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.telegramChanelBodyLeftText {
+  font-weight: 700;
+  font-size: clamp(16px, calc(32 / 14.4 * 1vw), 32px);
+  line-height: 140%;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #f2ece7;
+  -webkit-text-stroke: 1px #1a1a1a;
+}
+
+.telegramChanelBodyLeftText span {
+  color: rgba(221, 255, 83, 1);
+  -webkit-text-stroke: 0;
+}
+
+.telegramChanelBodyBottom {
+  width: 100%;
+  padding-right: 15px;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 16px;
+}
+
+.telegramChanelBodyBottom button {
+  width: 100%;
+  max-width: clamp(271px, calc(515 / 14.4 * 1vw), 515px);
+  aspect-ratio: 515/88;
+  border-radius: 100px;
+  background: url(/images/telegramChanelButtonBg.webp);
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: none;
+  transition: all 0.4s ease;
+  margin-bottom: clamp(-46px, calc(-44 / 14.4 * 1vw), -26px);
+}
+
+.telegramChanelBodyBottom button:hover {
+  opacity: 0.6;
+}
+
+.telegramChanel {
+  margin-bottom: 50px;
 }
 
 @media only screen and (max-width: 1300px) {
@@ -680,7 +793,7 @@ body {
   .downloadFromBodyText > div > p {
     width: 100%;
     max-width: 450px;
-    font-family: "Avenir Next Cyr";
+
     font-size: clamp(10px, calc(20 / 14.4 * 1vw), 20px);
   }
 
@@ -870,7 +983,7 @@ body {
 
   .downloadFromBodyText > p {
     max-width: 100%;
-    font-family: "Avenir Next Cyr";
+
     font-size: clamp(16px, calc(40 / 7 * 1vw), 40px);
   }
 
@@ -950,22 +1063,15 @@ body {
   .invationInStudyWrapperDescItem p {
     max-width: 100%;
     font-size: clamp(20px, calc(28 / 7 * 1vw), 28px);
-    line-height: 140%;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    color: #f2ece7;
-    -webkit-text-stroke: 1px #1a1a1a;
     text-align: center;
   }
+
   .invationInStudyWrapperDescItem p span {
     color: rgba(221, 255, 83, 1);
   }
 
   .ourProgramTitle p {
     font-size: clamp(40px, calc(128 / 14.4 * 1vw), 128px);
-    line-height: 110%;
-    letter-spacing: 1px;
-    text-transform: uppercase;
   }
 
   .ourProgramTitleTop::before,
@@ -994,9 +1100,48 @@ body {
   }
 
   .ourProgramBodyBox button {
-    width: 100%;
     max-width: clamp(300px, calc(570 / 7 * 1vw), 570px);
     aspect-ratio: 420/112;
     border-radius: clamp(70px, calc(100 / 14.4 * 1vw), 100px);
+  }
+
+  .telegramChanelTitle {
+    width: 100%;
+    font-size: clamp(48px, calc(80 / 7 * 1vw), 80px);
+    text-align: end;
+    word-wrap: wrap;
+  }
+
+  .telegramChanelDesc {
+    max-width: clamp(190px, calc(400 / 7 * 1vw), 400px);
+    font-size: clamp(12px, calc(20 / 7 * 1vw), 20px);
+  }
+
+  .telegramChanelBody {
+    padding-top: 0;
+  }
+
+  .telegramChanelBodyLeft {
+    max-width: 100%;
+    margin-top: -25px;
+  }
+
+  .telegramChanelBodyTop {
+    flex-direction: column-reverse;
+  }
+
+  .telegramChanelBodyTop > img {
+    max-width: clamp(154px, calc(180 / 7 * 1vw), 180px);
+    margin-top: clamp(-180px, calc(-180 / 7 * 1vw), -130px);
+    margin-right: clamp(-50px, calc(-50 / 14.4 * 1vw), -20px);
+    margin-left: auto;
+  }
+
+  .telegramChanelBodyLeftText {
+    font-size: clamp(16px, calc(26 / 7 * 1vw), 26px);
+  }
+
+  .telegramChanelBodyBottom button {
+    max-width: clamp(271px, calc(400 / 7 * 1vw), 400px);
   }
 }
