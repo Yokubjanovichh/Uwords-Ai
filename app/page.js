@@ -78,6 +78,65 @@ export default function Hage() {
           </div>
         </div>
       </div>
+      <div className="invationInStudyWrapper">
+        <div className="invationInStudyWrapperTitle">
+          <p>Инновации в</p>
+          <div className="invationInStudyWrapperTitleBody">
+            <p>
+              В Uwords AI обучение — это игровая система, которая даёт 100%
+              результат в кратчайшие сроки 🚀
+            </p>
+            <img src="/images/training.webp" alt="image" />
+          </div>
+        </div>
+        <div className="invationInStudyWrapperCards">
+          <img
+            className="cardItem"
+            src="/images/inovationInStudyCard1.webp"
+            alt="image"
+          />
+          <img className="connector" src="/images/Connector.webp" alt="image" />
+          <img
+            className="connectorGorizoltal"
+            src="/images/ConnectorGorizoltal.webp"
+            alt="image"
+          />
+          <img
+            className="cardItem"
+            src="/images/inovationInStudyCard2.webp"
+            alt="image"
+          />
+          <img className="connector" src="/images/Connector.webp" alt="image" />
+          <img
+            className="connectorGorizoltal"
+            src="/images/ConnectorGorizoltal.webp"
+            alt="image"
+          />
+          <img
+            className="cardItem"
+            src="/images/inovationInStudyCard3.webp"
+            alt="image"
+          />
+        </div>
+        <div className="invationInStudyWrapperDesc">
+          <div className="invationInStudyWrapperDescItem">
+            <img src="/images/inovationInStudyMan.webp" alt="image" />
+            <p>
+              <span>Искусственный интеллект запоминает,</span> какие слова вы
+              используете в вашей повседневной речи,
+            </p>
+          </div>
+          <div className="invationInStudyWrapperDescItem invationInStudyWrapperDescItem2">
+            <img src="/images/inovationInStudyWoman.webp" alt="image" />
+            <p>
+              и предлагает их для изучения на иностранном языке,{" "}
+              <span>
+                превращая обучение в естественный и эффективный процесс.
+              </span>
+            </p>
+          </div>
+        </div>
+      </div>
     </>
   );
 }
