@@ -519,6 +519,91 @@ body {
   flex-direction: row-reverse;
 }
 
+.ourProgram {
+  width: 100%;
+  margin-top: clamp(40px, calc(100 / 14.4 * 1vw), 100px);
+  padding: 0 clamp(10px, calc(40 / 14.4 * 1vw), 40px);
+}
+
+.ourProgramTitle p {
+  font-family: "Avenir Next Cyr";
+  font-weight: 750;
+  font-size: clamp(40px, calc(128 / 14.4 * 1vw), 128px);
+  line-height: 110%;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.ourProgramTitleTop::before {
+  content: "Специальное";
+  color: rgba(219, 121, 226, 1);
+}
+
+.ourProgramTitleBottom::before {
+  content: "предложение";
+  color: #f2ece7;
+  -webkit-text-stroke: 1px #1a1a1a;
+  float: right;
+}
+
+.ourProgramBody {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: clamp(20px, calc(60 / 14.4 * 1vw), 60px);
+  justify-content: space-between;
+}
+
+.ourProgramBodyBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin-top: clamp(20px, calc(40 / 14.4 * 1vw), 40px);
+}
+
+.ourProgramBodyBox img {
+  width: 100%;
+  max-width: clamp(200px, calc(400 / 14.4 * 1vw), 400px);
+  height: auto;
+}
+
+.ourProgramBodyBox button {
+  width: 100%;
+  max-width: clamp(200px, calc(420 / 14.4 * 1vw), 420px);
+  aspect-ratio: 420/112;
+  border-radius: clamp(70px, calc(100 / 14.4 * 1vw), 100px);
+  border: none;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+
+.ourProgramBodyBox button:hover {
+  opacity: 0.6;
+}
+
+.ourProgramBodyBox:nth-child(1) button {
+  background: url(/images/ourProgramBodyBoxButton1.webp);
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.ourProgramBodyBox:nth-child(2) button {
+  background: url(/images/ourProgramBodyBoxButton2.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.ourProgramBodyBox:nth-child(3) button {
+  background: url(/images/ourProgramBodyBoxButton3.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 @media only screen and (max-width: 1300px) {
   .aboutPrHeaderBodyLeftStar {
     flex-direction: column;
@@ -874,5 +959,44 @@ body {
   }
   .invationInStudyWrapperDescItem p span {
     color: rgba(221, 255, 83, 1);
+  }
+
+  .ourProgramTitle p {
+    font-size: clamp(40px, calc(128 / 14.4 * 1vw), 128px);
+    line-height: 110%;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+
+  .ourProgramTitleTop::before,
+  .ourProgramTitleBottom::before {
+    content: "";
+  }
+
+  .ourProgramTitleTop::after {
+    content: "наши";
+    color: #f2ece7;
+    -webkit-text-stroke: 1px #1a1a1a;
+  }
+
+  .ourProgramTitleBottom::after {
+    content: "программы";
+    color: rgba(219, 121, 226, 1);
+    float: left;
+  }
+
+  .ourProgramBody {
+    flex-direction: column;
+  }
+
+  .ourProgramBodyBox img {
+    max-width: clamp(300px, calc(550 / 7 * 1vw), 550px);
+  }
+
+  .ourProgramBodyBox button {
+    width: 100%;
+    max-width: clamp(300px, calc(570 / 7 * 1vw), 570px);
+    aspect-ratio: 420/112;
+    border-radius: clamp(70px, calc(100 / 14.4 * 1vw), 100px);
   }
 }

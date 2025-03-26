@@ -137,6 +137,26 @@ export default function Hage() {
           </div>
         </div>
       </div>
+      <div className="ourProgram">
+        <div className="ourProgramTitle">
+          <p className="ourProgramTitleTop"></p>
+          <p className="ourProgramTitleBottom"></p>
+        </div>
+        <div className="ourProgramBody">
+          <div className="ourProgramBodyBox">
+            <img src="/images/ourProgramBodyBox2.webp" alt="image" />
+            <button></button>
+          </div>
+          <div className="ourProgramBodyBox">
+            <img src="/images/ourProgramBodyBox1.webp" alt="image" />
+            <button></button>
+          </div>
+          <div className="ourProgramBodyBox">
+            <img src="/images/ourProgramBodyBox3.webp" alt="image" />
+            <button></button>
+          </div>
+        </div>
+      </div>
     </>
   );
 }
