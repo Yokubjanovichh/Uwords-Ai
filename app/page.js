@@ -157,6 +157,37 @@ export default function Hage() {
           </div>
         </div>
       </div>
+      <div className="telegramChanel">
+        <p className="telegramChanelTitle">
+          <span>telegram-</span>
+          <span>канал</span>
+        </p>
+        <p className="telegramChanelDesc">
+          подпишитесь на наш Telegram-канал и получите доступ к умному боту🤖!
+        </p>
+        <div className="telegramChanelBody">
+          <div className="telegramChanelBodyTop">
+            <div className="telegramChanelBodyLeft">
+              <p className="telegramChanelBodyLeftText">
+                <span> 🎓 Актуальные учебные материалы и подборки </span>—
+                только полезные слова и выражения.
+              </p>
+              <p className="telegramChanelBodyLeftText">
+                <span>🤝 Сообщество </span> — общайтесь с единомышленниками и
+                обменивайтесь опытом.
+              </p>
+              <p className="telegramChanelBodyLeftText">
+                <span> 🎁 Бонусы и акции — </span> эксклюзивные предложения для
+                подписчиков.
+              </p>
+            </div>
+            <img src="/images/telegramBust.svg" alt="image" />
+          </div>
+          <div className="telegramChanelBodyBottom">
+            <button></button>
+          </div>
+        </div>
+      </div>
     </>
   );
 }
