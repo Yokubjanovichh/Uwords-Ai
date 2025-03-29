@@ -1,4 +1,59 @@
+"use client";
+
+import { useEffect, useRef } from "react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
+
 export default function Hage() {
+  const carouselRef = useRef(null);
+
+  useEffect(() => {
+    const carouselaToRight = document.querySelectorAll(".carouselaToRight");
+    const carouselaToLeft = document.querySelectorAll(".carouselaToLeft");
+
+    carouselaToRight.forEach((carousel, index) => {
+      const groups = carousel.querySelectorAll(".group");
+
+      gsap.to(groups, {
+        x: "100%",
+        ease: "none",
+        scrollTrigger: {
+          trigger: carousel,
+          start: "top bottom",
+          end: "bottom top",
+          scrub: 2, // Scroll tezligiga mos ravishda harakatlanadi
+        },
+        modifiers: {
+          x: (x) => {
+            return `${parseFloat(x) % 100}%`; // Uzluksiz harakatni ta’minlash
+          },
+        },
+      });
+    });
+
+    carouselaToLeft.forEach((carousel, index) => {
+      const groups = carousel.querySelectorAll(".group");
+
+      gsap.to(groups, {
+        x: "-100%",
+        ease: "none",
+        scrollTrigger: {
+          trigger: carousel,
+          start: "top bottom",
+          end: "bottom top",
+          scrub: 2,
+        },
+        modifiers: {
+          x: (x) => {
+            return `${parseFloat(x) % 100}%`;
+          },
+        },
+      });
+    });
+  }, []);
+
   return (
     <>
       <div className="aboutProjectWrapper">
@@ -187,6 +242,134 @@ export default function Hage() {
             <button></button>
           </div>
         </div>
+      </div>
+      <div className="sectionCarouselsWrapper" ref={carouselRef}>
+        <div className="carouselBgAnimation">
+          <div className="carousel carouselaToRight">
+            <div className="group">
+              <div className="card">
+                <img src="/images/carouselArt.webp" alt="" />
+              </div>
+              <div className="card">
+                <img src="/images/carouselPresent.webp" alt="" />
+              </div>
+              <div className="card">
+                <img src="/images/carouselGlasses.webp" alt="" />
+              </div>
+              <div className="card">
+                <img src="/images/carouselShop.webp" alt="" />
+              </div>
+            </div>
+            <div className="group">
+              <div className="card">
+                <img src="/images/carouselArt.webp" alt="" />
+              </div>
+              <div className="card">
+                <img src="/images/carouselPresent.webp" alt="" />
+              </div>
+              <div className="card">
+                <img src="/images/carouselGlasses.webp" alt="" />
+              </div>
+              <div className="card">
+                <img src="/images/carouselShop.webp" alt="" />
+              </div>
+            </div>
+          </div>
+
+          <div className="carousel carouselaToLeft">
+            <div className="group">
+              <div className="card">
+                <img src="/images/carouselRoket.webp" alt="" />
+              </div>
+              <div className="card">
+                <img src="/images/carouselApple.webp" alt="" />
+              </div>
+              <div className="card">
+                <img src="/images/carouselLaptop.webp" alt="" />
+              </div>
+              <div className="card">
+                <img src="/images/carouselNoteBook.webp" alt="" />
+              </div>
+            </div>
+            <div className="group">
+              <div className="card">
+                <img src="/images/carouselRoket.webp" alt="" />
+              </div>
+              <div className="card">
+                <img src="/images/carouselApple.webp" alt="" />
+              </div>
+              <div className="card">
+                <img src="/images/carouselLamp.webp" alt="" />
+              </div>
+              <div className="card">
+                <img src="/images/carouselNoteBook.webp" alt="" />
+              </div>
+            </div>
+          </div>
+
+          <div className="carousel carouselaToRight">
+            <div className="group">
+              <div className="card">
+                <img src="/images/carouselBallon.webp" alt="" />
+              </div>
+              <div className="card">
+                <img src="/images/carouselOrange.webp" alt="" />
+              </div>
+              <div className="card">
+                <img src="/images/carouselLamp.webp" alt="" />
+              </div>
+              <div className="card">
+                <img src="/images/carouselDress.webp" alt="" />
+              </div>
+            </div>
+            <div className="group">
+              <div className="card">
+                <img src="/images/carouselBallon.webp" alt="" />
+              </div>
+              <div className="card">
+                <img src="/images/carouselLaptop.webp" alt="" />
+              </div>
+              <div className="card">
+                <img src="/images/carouselLamp.webp" alt="" />
+              </div>
+              <div className="card">
+                <img src="/images/carouselDress.webp" alt="" />
+              </div>
+            </div>
+          </div>
+
+          <div className="carousel carouselaToLeft">
+            <div className="group">
+              <div className="card">
+                <img src="/images/carouselBag.webp" alt="" />
+              </div>
+              <div className="card">
+                <img src="/images/carouselLove.webp" alt="" />
+              </div>
+              <div className="card">
+                <img src="/images/carouselLipstick.webp" alt="" />
+              </div>
+              <div className="card">
+                <img src="/images/carouselT-Shirt.webp" alt="" />
+              </div>
+            </div>
+            <div className="group">
+              <div className="card">
+                <img src="/images/carouselArt.webp" alt="" />
+              </div>
+              <div className="card">
+                <img src="/images/carouselPresent.webp" alt="" />
+              </div>
+              <div className="card">
+                <img src="/images/carouselGlasses.webp" alt="" />
+              </div>
+              <div className="card">
+                <img src="/images/carouselShop.webp" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <img src="/images/carouselSmartPhone.webp" alt="image" />
       </div>
     </>
   );
