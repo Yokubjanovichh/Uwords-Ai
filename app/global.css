@@ -772,6 +772,121 @@ body {
   height: 100%;
 }
 
+.blogWrapper {
+  width: 100%;
+  margin-top: clamp(40px, calc(100 / 14.4 * 1vw), 100px);
+  padding: 0 clamp(10px, calc(40 / 14.4 * 1vw), 40px);
+}
+
+.blogHeader {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(20px, calc(40 / 14.4 * 1vw), 40px);
+  margin-bottom: clamp(20px, calc(40 / 14.4 * 1vw));
+}
+
+.blogHeaderTitle {
+  font-family: "Avenir Next Cyr";
+  font-weight: 750;
+  font-size: clamp(48px, calc(128 / 14.4 * 1vw), 128px);
+  line-height: 120%;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #1a1a1a;
+  -webkit-text-stroke: clamp(2px, calc(4 / 14.4 * 1vw), 4px) #f2ece7;
+}
+
+.blogDesk {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.blogDesk p {
+  width: 100%;
+  max-width: clamp(253px, calc(480 / 14.4 * 1vw), 480px);
+  font-family: "Avenir Next Cyr";
+  font-weight: 700;
+  font-size: clamp(12px, calc(24 / 14.4 * 1vw), 24px);
+  line-height: 140%;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: rgba(242, 236, 231, 0.6);
+}
+
+.toBlogLink {
+  font-family: "Avenir Next Cyr";
+  font-weight: 700;
+  font-size: clamp(20px, calc(32 / 14.4 * 1vw), 32px);
+  line-height: 150%;
+  letter-spacing: 1px;
+  vertical-align: middle;
+  text-transform: uppercase;
+  color: #f2ece7;
+  -webkit-text-stroke: 1px #1a1a1a;
+  transition: all 0.4s ease;
+}
+
+.toBlogLink:hover {
+  opacity: 0.6;
+}
+
+.blogCarousel {
+  width: 100%;
+  margin-top: clamp(20px, calc(40 / 14.4 * 1vw), 40px);
+}
+
+.blogBoxWrapper {
+  width: 100%;
+  max-width: clamp(223px, calc(580 / 14.4 * 1vw), 580px);
+  height: auto;
+  padding: clamp(10px, calc(20 / 14.4 * 1vw), 20px);
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.blogBoxImg {
+  width: 100%;
+  position: relative;
+}
+
+.blogBoxImg > img {
+  width: 100%;
+  height: auto;
+}
+
+.blogBoxText > p {
+  font-family: "Avenir Next Cyr";
+  font-weight: 450;
+  letter-spacing: 1px;
+}
+
+.blogBoxText {
+  width: 100%;
+}
+
+.blogBoxText > p:first-child {
+  font-size: clamp(20px, calc(40 / 14.4 * 1vw), 40px);
+  line-height: clamp(28px, calc(48 / 14.4 * 1vw), 48px);
+  color: #f2ece7;
+  -webkit-text-stroke: 1px #1a1a1a;
+}
+
+.blogBoxText > p:last-child {
+  margin-top: 16px;
+  font-size: clamp(14px, calc(32 / 14.4 * 1vw), 32px);
+  line-height: clamp(18px, calc(40 / 14.4 * 1vw), 40px);
+  color: rgba(242, 236, 231, 0.6);
+  -webkit-text-stroke: 1px #1a1a1a;
+}
+
+.toBlogLinkSecond {
+  float: right;
+  margin-top: 20px;
+  display: none;
+}
+
 @media only screen and (max-width: 1300px) {
   .aboutPrHeaderBodyLeftStar {
     flex-direction: column;
@@ -854,6 +969,16 @@ body {
 
   .invationInStudyWrapperTitleBody {
     margin-top: -40px;
+  }
+
+  .blogBoxWrapper {
+    width: 100%;
+    max-width: clamp(223px, calc(580 / 10 * 1vw), 580px);
+    height: auto;
+    padding: clamp(10px, calc(20 / 14.4 * 1vw), 20px);
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
   }
 }
 
@@ -1204,5 +1329,19 @@ body {
     top: -5px;
     left: 0;
     right: 0;
+  }
+
+  .toBlogLinkFirst {
+    display: none;
+  }
+
+  .toBlogLinkSecond {
+    display: flex;
+  }
+
+  .blogDesk p {
+    width: 100%;
+    max-width: clamp(253px, calc(460 / 7 * 1vw), 460px);
+    font-size: clamp(12px, calc(20 / 7 * 1vw), 20px);
   }
 }

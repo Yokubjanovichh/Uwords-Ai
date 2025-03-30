@@ -1,10 +1,43 @@
 "use client";
 
 import { useEffect, useRef } from "react";
+import Slider from "react-slick";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import Link from "next/link";
+import BlogCarouselItem from "./components/blogCarouselBox";
+
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 gsap.registerPlugin(ScrollTrigger);
+
+const blogPosts = [
+  {
+    id: 1,
+    title: "Как ИИ помогает учить английский эффективнее?",
+    description: "Изучение английского языка с каждым годом становится все...",
+    image: "/images/blogBoxImg1.webp",
+  },
+  {
+    id: 2,
+    title: "5 лучших способов выучить английский с AI",
+    description: "Современные технологии позволяют учить английский...",
+    image: "/images/blogBoxImg2.webp",
+  },
+  {
+    id: 4,
+    title: "Как ИИ помогает учить английский эффективнее?",
+    description: "Изучение английского языка с каждым годом становится все...",
+    image: "/images/blogBoxImg1.webp",
+  },
+  {
+    id: 5,
+    title: "5 лучших способов выучить английский с AI",
+    description: "Современные технологии позволяют учить английский...",
+    image: "/images/blogBoxImg2.webp",
+  },
+];
 
 export default function Hage() {
   const carouselRef = useRef(null);
@@ -23,11 +56,11 @@ export default function Hage() {
           trigger: carousel,
           start: "top bottom",
           end: "bottom top",
-          scrub: 2, // Scroll tezligiga mos ravishda harakatlanadi
+          scrub: 2,
         },
         modifiers: {
           x: (x) => {
-            return `${parseFloat(x) % 100}%`; // Uzluksiz harakatni ta’minlash
+            return `${parseFloat(x) % 100}%`;
           },
         },
       });
@@ -53,6 +86,42 @@ export default function Hage() {
       });
     });
   }, []);
+
+  const settings = {
+    dots: true,
+    infinite: false,
+    speed: 500,
+    slidesToShow: 2.3,
+    slidesToScroll: 1,
+    arrows: false,
+    autoplay: false,
+    responsive: [
+      {
+        breakpoint: 1440,
+        settings: {
+          slidesToShow: 2.3,
+        },
+      },
+      {
+        breakpoint: 1000,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 700,
+        settings: {
+          slidesToShow: 1.7,
+        },
+      },
+      {
+        breakpoint: 400,
+        settings: {
+          slidesToShow: 1.4,
+        },
+      },
+    ],
+  };
 
   return (
     <>
@@ -288,7 +357,7 @@ export default function Hage() {
                 <img src="/images/carouselLaptop.webp" alt="" />
               </div>
               <div className="card">
-                <img src="/images/carouselNoteBook.webp" alt="" />
+                <img src="/images/carouselNotebook.webp" alt="" />
               </div>
             </div>
             <div className="group">
@@ -302,7 +371,7 @@ export default function Hage() {
                 <img src="/images/carouselLamp.webp" alt="" />
               </div>
               <div className="card">
-                <img src="/images/carouselNoteBook.webp" alt="" />
+                <img src="/images/carouselNotebook.webp" alt="" />
               </div>
             </div>
           </div>
@@ -370,6 +439,30 @@ export default function Hage() {
           </div>
         </div>
         <img src="/images/carouselSmartPhone.webp" alt="image" />
+      </div>
+      <div className="blogWrapper">
+        <div className="blogHeader">
+          <p className="blogHeaderTitle">блог</p>
+          <div className="blogDesk">
+            <p>
+              Новые идеи и полезные советы для изучения английского с AI от
+              нашей команды 👪
+            </p>
+            <Link href="/blog" className="toBlogLink toBlogLinkFirst">
+              перейти в блог
+            </Link>
+          </div>
+        </div>
+        <div className="blogCarousel">
+          <Slider {...settings}>
+            {blogPosts.map((post) => (
+              <BlogCarouselItem key={post.id} {...post} />
+            ))}
+          </Slider>
+        </div>
+        <Link href="/blog" className="toBlogLink toBlogLinkSecond">
+          перейти в блог
+        </Link>
       </div>
     </>
   );
