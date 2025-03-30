@@ -14,9 +14,9 @@ export default function NavBar() {
   return (
     <nav>
       <div className="navWrapper">
-        <a href="#">
+        <Link href="/">
           <img src="/icons/navbarLogo.svg" alt="MainLogo" />
-        </a>
+        </Link>
         <div className="navMenu">
           <Link href="/">О проекте</Link>
           <Link href="/">инвесторам</Link>

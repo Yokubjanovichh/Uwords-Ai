@@ -12,9 +12,10 @@ export default function BlogCarouselItem({ id, title, description, image }) {
   }
 
   return (
-    <div className="blogBoxWrapper">
+    <div className="blogBoxWrapper" onClick={handleClick}>
       <div className="blogBoxImg">
         <img src={image} alt="blogImage" />
+        <img src="/icons/carouselBoxIcon.svg" alt="icon" />
       </div>
       <div className="blogBoxText">
         <p>{title}</p>
