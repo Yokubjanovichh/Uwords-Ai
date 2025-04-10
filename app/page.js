@@ -459,10 +459,10 @@ export default function Hage() {
               <BlogCarouselItem key={post.id} {...post} />
             ))}
           </Slider>
+          <Link href="/blog" className="toBlogLink toBlogLinkSecond">
+            перейти в блог
+          </Link>
         </div>
-        <Link href="/blog" className="toBlogLink toBlogLinkSecond">
-          перейти в блог
-        </Link>
       </div>
     </>
   );
