@@ -777,6 +777,11 @@ body {
   width: 100%;
   margin-top: clamp(40px, calc(100 / 14.4 * 1vw), 100px);
   padding: 0 clamp(10px, calc(40 / 14.4 * 1vw), 40px);
+  margin-bottom: clamp(40px, calc(100 / 14.4 * 1vw), 100px);
+}
+
+.toBlogLinkSecond {
+  margin-bottom: clamp(40px, calc(100 / 14.4 * 1vw), 100px);
 }
 
 .blogHeader {
@@ -916,6 +921,136 @@ body {
   float: right;
   margin-top: 20px;
   display: none;
+}
+
+.footerSocial {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(20px, calc(80 / 14.4 * 1vw), 80px);
+  margin-bottom: clamp(40px, calc(120 / 14.4 * 1vw), 120px);
+  padding: 0 clamp(10px, calc(40 / 14.4 * 1vw), 40px);
+}
+
+.footerSocial a img {
+  width: 100%;
+  max-width: clamp(200px, calc(401 / 14.4 * 1vw), 401px);
+  height: auto;
+}
+
+.footerMainTitle {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: clamp(18px, calc(170 / 14.4 * 1vw), 170px);
+  padding-left: clamp(6px, calc(30 / 14.4 * 1vw), 30px);
+}
+
+.footerMainTitle p {
+  width: 100%;
+  max-width: clamp(143px, calc(750 / 14.4 * 1vw), 750px);
+  font-family: "Avenir Next Cyr";
+  font-weight: 750;
+  font-size: clamp(48px, calc(128 / 14.4 * 1vw), 128px);
+  line-height: 120%;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #1a1a1a;
+  -webkit-text-stroke: rgba(242, 236, 231, 0.6)
+    clamp(2px, calc(4 / 14.4 * 1vw), 4px);
+}
+
+.footerMainTitleSocial {
+  display: flex;
+  align-items: center;
+  gap: clamp(12px, calc(28 / 14.4 * 1vw), 28px);
+}
+
+.footerMainTitleSocial > a {
+  transition: all 0.4s ease;
+}
+
+.footerMainTitleSocial > a > img {
+  width: 100%;
+  max-width: clamp(40px, calc(80 / 14.4 * 1vw), 80px);
+  aspect-ratio: 1/1;
+  cursor: pointer;
+}
+
+.footerMainTitleSocial > a :hover {
+  opacity: 0.6;
+}
+
+.footerMain {
+  width: 100%;
+  height: auto;
+  background: url("/images/footerBg.webp");
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.footerBody {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 clamp(10px, calc(30 / 14.4 * 1vw), 30px);
+  margin-top: auto;
+}
+
+.footerBody > img {
+  width: 100%;
+  max-width: clamp(164px, calc(460 / 14.4 * 1vw), 460px);
+  height: 460/561;
+}
+
+.footerBodyRight {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: clamp(20px, calc(71 / 14.4 * 1vw), 71px);
+}
+
+.footerBodyRightLinks {
+  display: flex;
+  align-items: flex-start;
+  gap: clamp(50px, calc(100 / 14.4 * 1vw), 100px);
+}
+
+.footerBodyRightLinks > div {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(31px, calc(42 / 14.4 * 1vw), 42px);
+}
+
+.footerBodyRightLinks > div > a {
+  font-family: "Avenir Next Cyr";
+  font-weight: 700;
+  font-size: clamp(12px, calc(24 / 14.4 * 1vw), 24px);
+  line-height: 100%;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.8);
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+
+.footerBodyRightLinks > div > a:hover,
+.footerBodyRight > a:hover {
+  opacity: 0.6;
+}
+
+.footerBodyRight > a {
+  font-family: "Avenir Next Cyr";
+  font-weight: 750;
+  font-size: clamp(20px, calc(64 / 14.4 * 1vw), 64px);
+  line-height: 100%;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: rgba(221, 255, 83, 1);
+  transition: all 0.4s ease;
 }
 
 @media only screen and (max-width: 1300px) {
@@ -1374,5 +1509,90 @@ body {
     width: 100%;
     max-width: clamp(253px, calc(460 / 7 * 1vw), 460px);
     font-size: clamp(12px, calc(20 / 7 * 1vw), 20px);
+  }
+
+  .footerSocial {
+    flex-direction: column;
+    margin-bottom: clamp(40px, calc(140 / 7 * 1vw), 140px);
+  }
+
+  .footerMain {
+    position: relative;
+    padding-bottom: 20px;
+  }
+
+  .footerSocial a img {
+    max-width: 100%;
+  }
+
+  .footerMainTitle {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: clamp(18px, calc(20 / 7 * 1vw), 20px);
+  }
+
+  .footerMainTitle p {
+    max-width: clamp(143px, calc(360 / 7 * 1vw), 750px);
+    font-size: clamp(48px, calc(100 / 7 * 1vw), 128px);
+    line-height: 100%;
+  }
+
+  .footerMainTitleSocial {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-left: clamp(20px, calc(50 / 7 * 1vw), 50px);
+  }
+
+  .footerMainTitleSocial > a {
+    width: 100%;
+  }
+
+  .footerMainTitleSocial > a > img {
+    width: 100%;
+    max-width: clamp(40px, calc(70 / 7 * 1vw), 80px);
+  }
+  .footerBody {
+    width: 100%;
+    flex-direction: column;
+    margin-top: clamp(20px, calc(50 / 7 * 1vw), 50px);
+  }
+
+  .footerBody > img {
+    width: 100%;
+    max-width: clamp(164px, calc(300 / 7 * 1vw), 460px);
+    transform: scaleX(-1);
+    position: absolute;
+    right: 0;
+    top: clamp(30px, calc(50 / 7 * 1vw), 50px);
+  }
+
+  .footerBodyRight {
+    width: 100% !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .footerBodyRightLinks {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 0;
+    justify-content: space-between;
+  }
+
+  .footerBodyRightLinks > div {
+    gap: clamp(31px, calc(42 / 7 * 1vw), 42px);
+  }
+
+  .footerBodyRightLinks > div > a {
+    font-size: clamp(12px, calc(24 / 7 * 1vw), 24px);
+  }
+
+  .footerBodyRight > a {
+    font-size: clamp(20px, calc(35 / 7 * 1vw), 35px);
   }
 }
